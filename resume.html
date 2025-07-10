@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
-        <title>Chris Kistner-King's Resume</title>
+        <title>Fizzy's Resume</title>
+    </head>
+    <body>
         <div class="maingrid">
             <div class="headerpanelgrid">
                 <nav class="headernav">
@@ -14,10 +16,103 @@
                     </ul>
                 </nav>
                 <div class="fizzy"></div>
+                <article class="fizzybio">
+                    <header>
+                        <h1 style="font-size: xx-large;">Say hello to my dog <span style="background-image: linear-gradient(171deg,rgb(58, 147, 249) 0%, rgb(138, 63, 243) 35%, rgb(165, 28, 165)); -webkit-background-clip: text; color: transparent; background-clip: text;">Fizzy</span> and her portfolio</h1>
+                    </header>
+                    <section>
+                        <p style="font-size: large; margin: 50px;">
+                            Fizzy is my dog and a wonderful companion. She may not be the smartest, but she is incredibly sweet, quiet, and loyal. Fizzy loves cuddling, being petted, and spending time with people. As a mixed breed rescue, she brings a lot of joy to my life, and I love her very much!
+                        </p>
+                    </section>
+                </article>
+                <main class="maincontent">
+                    <header>
+                        <h1>Resume
+                        <br>
+                        <hr>
+                        <h2>Contact Information</h2>
+                        <h3>Email: <a href="mailto:fizzgig@notarealemail.com" style="color: hsl(238, 100%, 85%);">fizzgig@notarealemail.com</a></h3>
+                        <h3>Phone: <a class="maintext">(541) 123-4567</a></h3>
+                        <h2>Objective</h2>
+                        <h3>To: <a class="maintext"> obtain a position as a software developer where I can utilize my skills and knowledge to contribute to the success of the company.</a></h3>
+                        <h2>Education</h2>
+                        <h3>Degree: <a class="maintext">Bachelor of Science in Computer Science</a></h3>
+                        <hr>
+                        <h2>Experience</h2>
+                        <ol>
+                            <li>
+                                <strong class="employmentlititle">Company:</strong> <span class="maintext">ABC Corporation</span><br>
+                                <strong class="employmentlititle">Position:</strong> <span class="maintext">Software Developer</span>
+                            </li>
+                            <li>
+                                <strong class="employmentlititle">Company:</strong> <span class="maintext">XYZ Inc.</span><br>
+                                <strong class="employmentlititle">Position:</strong> <span class="maintext">Junior Developer</span>
+                            </li>
+                            <li>
+                                <strong class="employmentlititle">Company:</strong> <span class="maintext">Tech Solutions</span><br>
+                                <strong class="employmentlititle">Position:</strong> <span class="maintext">Intern</span>
+                            </li>
+                            <li>
+                                <strong class="employmentlititle">Company:</strong> <span class="maintext">Web Innovations</span><br>
+                                <strong class="employmentlititle">Position:</strong> <span class="maintext">Web Developer</span>
+                            </li>
+                        </ol>
+                        <hr>
+                        <h2>Skills</h2>
+                            <h3>Programming Languages: <a class="maintext">Java, Python, C++</a></h3>
+                            <h3>Web Development: <a class="maintext">HTML, CSS, JavaScript</a></h3>
+                            <h3>Database Management: <a class="maintext">SQL, MongoDB</a></h3>
+                            <h3>Version Control: <a class="maintext">Git, GitHub</a></h3>
+                            <br>
+                            <table>
+                                <caption>Technical Skills Overview</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Skill</th>
+                                        <th>Proficiency</th>
+                                        <th>Years of Experience</th>
+                                        <th>Last Used</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Java</td>
+                                        <td>Advanced</td>
+                                        <td>4</td>
+                                        <td>2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HTML/CSS</td>
+                                        <td>Advanced</td>
+                                        <td>5</td>
+                                        <td>2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Python</td>
+                                        <td>Intermediate</td>
+                                        <td>3</td>
+                                        <td>2024</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </h1>
+                    </header>
+                </main>
             </div>
         </div>
-    </head>
-    <body>
+        <footer class="footer">
+            <p>&copy; 2025 Fizzy's Portfolio. All rights reserved.</p>
+            <div id="currentDateDisplay"></div>
+            <script>
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = now.toLocaleDateString('en-US', options);
 
+                const dateDisplayDiv = document.getElementById('currentDateDisplay');
+                dateDisplayDiv.innerHTML = formattedDate;
+                console.log("Current date displayed:", formattedDate);
+            </script>
+        </footer>
     </body>
 </html>

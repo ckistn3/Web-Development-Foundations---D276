@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
-        <title>Chris Kistner-King's Career Goals</title>
+        <title>Fizzy's Career Goals</title>
+    </head>
+    <body>
         <div class="maingrid">
             <div class="headerpanelgrid">
                 <nav class="headernav">
@@ -14,10 +16,33 @@
                     </ul>
                 </nav>
                 <div class="fizzy"></div>
+                <article class="fizzybio">
+                    <header>
+                        <h1 style="font-size: xx-large;">Say hello to my dog <span style="background-image: linear-gradient(171deg,rgb(58, 147, 249) 0%, rgb(138, 63, 243) 35%, rgb(165, 28, 165)); -webkit-background-clip: text; color: transparent; background-clip: text;">Fizzy</span> and her portfolio</h1>
+                    </header>
+                    <section>
+                        <p style="font-size: large; margin: 50px;">
+                            Fizzy is my dog and a wonderful companion. She may not be the smartest, but she is incredibly sweet, quiet, and loyal. Fizzy loves cuddling, being petted, and spending time with people. As a mixed breed rescue, she brings a lot of joy to my life, and I love her very much!
+                        </p>
+                    </section>
+                </article>
+                <main class="maincontent">
+                    
+                </main>
             </div>
         </div>
-    </head>
-    <body>
+        <footer class="footer">
+            <p>&copy; 2025 Fizzy's Portfolio. All rights reserved.</p>
+            <div id="currentDateDisplay"></div>
+            <script>
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = now.toLocaleDateString('en-US', options);
 
+                const dateDisplayDiv = document.getElementById('currentDateDisplay');
+                dateDisplayDiv.innerHTML = formattedDate;
+                console.log("Current date displayed:", formattedDate);
+            </script>
+        </footer>
     </body>
 </html>

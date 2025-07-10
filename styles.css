@@ -7,13 +7,15 @@
 
 html, body {
     padding: 0;
-    margin: 0;;
+    margin: 0;
+    font-family: 'RobotoCondensedMedium', sans-serif;
+    color: white;
 }
 
 .maingrid {
     display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: 20px 1fr 20px;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 20px auto 20px;
     background-image: url("../resources/images/19923.png");
     background-size: cover;
 }
@@ -24,24 +26,23 @@ html, body {
     grid-row-start: 2;
     grid-row-end: 3;
     display: grid;
-    grid-template-columns: 60% 1fr;
-    grid-template-rows: 40px 300px 1fr;
+    grid-template-columns: 20px minmax(100px,auto) auto 20px;
+    grid-template-rows: 40px auto 1fr;
     border-radius: 20px;
-    height: 500px;
-    background: linear-gradient(171deg,rgba(22, 18, 93, 0.784) 0%, rgb(9, 9, 121) 35%, rgba(41, 108, 166, 0.917))
+    background: linear-gradient(171deg,rgba(22, 18, 93, 0.784) 0%, rgb(9, 9, 121) 35%, rgba(41, 108, 166, 0.055))
 }
 
 .headernav {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    align-self: center;
-    justify-self: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: right;
+    justify-self: right;
+    margin: 10px;
 }
 
 .headerul {
     list-style-type: none;
-    margin: 20px;
-    padding: 0pt 0pt 0pt 0pt;
+    padding: 0pt;
 }
 
 .headerli {
@@ -66,7 +67,7 @@ html, body {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'RobotoCondensedMedium', sans-serif;
-    font-size: larger;
+    font-size: large;
 }
 
 .headerlitextselected, .headerlitextselected:hover {
@@ -80,16 +81,89 @@ html, body {
     height: 200px;
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     background-image: url(resources/images/Fizzy.png);
     background-size: cover;
-    align-self: center;
-    justify-self: center;
+    align-self: right;
+    justify-self: right;
+    margin: 50px 10px;
     border-radius: 50%;
     border-color: var(--btnselection);
     border-style: solid;
     filter: drop-shadow(0 0 2rem var(--btnhilight));
+}
+
+.fizzybio {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0px 20px;
+    color: white;
+    font-family: 'RobotoCondensedMedium', sans-serif;
+    font-size: small;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.maincontent {
+    border-radius: 15px;
+    grid-area: 3 / 2 / 4 / 4;
+    background: linear-gradient(171deg,rgba(58, 147, 249, 0.387) 0%, rgba(138, 63, 243, 0.468) 35%, rgb(79, 13, 79));
+    padding: 20px;
+    color: #ffffff;
+}
+
+h2 {
+    margin: 40px 10px 10px 15px;
+    color: #d98cf7;
+}
+
+h3 {
+    margin: 15px 15px;
+    color: #f3d3ff;
+}
+
+.maintext {
+    color: white;
+    font-size: medium;
+}
+
+.employmentlititle {
+    color: #f3d3ff;
+    font-weight: bold;
+}
+
+.footer{
+    text-align:center;
+    color: #888888;
+    font-size: 1em;
+    margin: 30px 0 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+    border: 3px solid #ffffff42;
+    background: #c258b9a5;
+}
+
+tbody td:nth-child(even) {
+    background-color: #b662a1;
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px;
+}
+
+thead {
+    background-color: #300c2d;
 }
 
 @font-face {
