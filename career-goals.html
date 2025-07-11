@@ -29,23 +29,26 @@
                 <main class="maincontent">
                     <header>
                         <h1>Career Goals</h1>
+                        <hr>
                     </header>
-                    <section>
-                        <h2>My Career Aspirations</h2>
-                        <p>I aspire to become a <strong>full-stack web developer</strong> with a focus on creating accessible and visually appealing web applications. My goal is to continuously improve my <span style="color: #3a93f9;">HTML</span> and <span style="color: #8a3ff3;">CSS</span> skills, and to contribute to projects that make a positive impact.</p>
-                        <img src="resources/images/Fizzy.png" alt="Fizzy the dog" style="max-width:200px; display:block; margin:20px auto; border-radius:12px; box-shadow:0 2px 8px #ccc;">
-                        <video controls width="320" style="display:block; margin:20px auto;">
-                            <source src="resources/images/19923.png" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <audio controls style="display:block; margin:20px auto;">
-                            <source src="resources/images/19923.png" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
+                    <section class="careersectiongrid">
+                        <h2 style="grid-column-start: 1;grid-column-end: 3;">My Career Aspirations</h2>
+                        <h3 style="grid-column-start: 1;grid-column-end: 3;">I aspire to become a <strong>full-stack web developer</strong> with a focus on creating accessible and visually appealing web applications. My goal is to continuously improve my <span style="background-image: linear-gradient(0deg,rgb(86, 97, 255) 0%, rgb(37, 153, 255) 35%, rgb(230, 0, 255)); -webkit-background-clip: text; color: transparent; background-clip: text;">HTML</span> and <span class="cssspan">CSS</span> skills, and to contribute to projects that make a positive impact.</h3>
+                        <div class="careermediacontainer">
+                            <img class="careerimg" src="../resources/images/Fizzy.png">
+                            <video class="carrervid" controls width="320">
+                                <source src="resources/videos/fizzy.mp4" type="video/mp4">
+                            </video>
+                            <audio class="careeraudio" controls>
+                                <source src="resources/images/19923.png" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+
                     </section>
                     <section>
-                        <h2>Contact Me</h2>
-                        <form action="https://wp.zybooks.com/form-viewer.php" method="post" style="max-width:500px; margin:0 auto; background:#f9f9f9; padding:20px; border-radius:10px; box-shadow:0 2px 8px #eee;">
+                        <h2 >Contact Me</h2>
+                        <form class="careerform" action="https://wp.zybooks.com/form-viewer.php" method="post">
                             <label for="fname">First Name:</label><br>
                             <input type="text" id="fname" name="fname" required><br><br>
                             <label for="lname">Last Name:</label><br>
