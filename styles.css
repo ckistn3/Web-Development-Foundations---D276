@@ -16,7 +16,7 @@ html, body {
 .maingrid {
     display: grid;
     grid-template-columns: 20px auto 20px;
-    grid-template-rows: 20px auto 20px;\
+    grid-template-rows: 20px auto 20px;
     background-size: cover;
 }
 
